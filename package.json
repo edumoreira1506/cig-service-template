@@ -1,0 +1,19 @@
+{
+  "name": "cig-service-template",
+  "version": "0.1.0",
+  "description": "Project template of node service",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edumoreira1506/cig-service-template.git"
+  },
+  "author": "Eduardo Moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edumoreira1506/cig-service-template/issues"
+  },
+  "homepage": "https://github.com/edumoreira1506/cig-service-template#readme"
+}
