@@ -1,0 +1,50 @@
+name: CI
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.17.3
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: Install yarn and dependencies
+        run: |
+          npm install -g yarn
+          yarn
+          yarn --check-files
+      - name: Running tests
+        run: |
+          yarn test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.17.3
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: Install yarn and dependencies
+        run: |
+          npm install -g yarn
+          yarn
+          yarn --check-files
+      - name: Running eslint
+        run: |
+          yarn lint
