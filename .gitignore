@@ -1,0 +1,9 @@
+# Dependencies
+node_modules
+yarn-*
+
+# Build
+build
+
+# Env
+.env

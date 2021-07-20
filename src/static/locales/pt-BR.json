@@ -1,0 +1,9 @@
+{
+	"online-api": "API Online",
+	"invalid-email": "{{field}} precisa ser um e-mail",
+	"empty-field": "{{field}} não pode ser vazio",
+	"required-field": "{{field}} é obrigatório",
+	"validated": "Válido!",
+	"app.title": "CIG: Plataforma de Comercialização de Índio Gigante",
+	"app.description": "Documentação da API"
+}
