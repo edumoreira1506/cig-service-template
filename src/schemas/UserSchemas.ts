@@ -4,7 +4,7 @@ import i18n from '@Configs/i18n'
 
 export const storeUserSchema = Joi.object({
   email: Joi.string().email().required().messages({
-    'string.base': i18n.__('invalid-email', { field: 'email' }),
+    'string.email': i18n.__('invalid-email', { field: 'email' }),
     'string.empty': i18n.__('empty-field', { field: 'email' }),
     'any.required': i18n.__('required-field', { field: 'email' })
   }),
