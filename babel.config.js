@@ -28,6 +28,7 @@ module.exports = {
           "@Middlewares": "./src/middlewares",
           "@Services": "./src/services",
           "@Schemas": "./src/schemas",
+          "@Docs": "./src/docs"
         },
       },
     ],

@@ -30,6 +30,9 @@
       "@Entities/*": [
         "src/entities/*"
       ],
+      "@Docs/*": [
+        "src/docs/*"
+      ],
       "@Constants/*": [
         "src/constants/*"
       ],
