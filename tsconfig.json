@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": [
+      "ES2020"
+    ],
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@Configs/*": [
+        "src/configs/*"
+      ],
+      "@Schemas/*": [
+        "src/schemas/*"
+      ],
+      "@Entities/*": [
+        "src/entities/*"
+      ],
+      "@Constants/*": [
+        "src/constants/*"
+      ],
+      "@Controllers/*": [
+        "src/controllers/*"
+      ],
+      "@Repositories/*": [
+        "src/repositories/*"
+      ],
+      "@Errors/*": [
+        "src/errors/*"
+      ],
+      "@Types/*": [
+        "src/@types/*"
+      ],
+      "@Builders/*": [
+        "src/builders/*"
+      ],
+      "@Middlewares/*": [
+        "src/middlewares/*"
+      ],
+      "@Services/*": [
+        "src/services/*"
+      ]
+    }
+  }
+}
