@@ -3,7 +3,7 @@ name: Staging Deploy
 on:
   push:
     branches:
-      - setup
+      - staging
 
 jobs:
   build:
