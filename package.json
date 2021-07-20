@@ -25,9 +25,11 @@
   },
   "homepage": "https://github.com/edumoreira1506/cig-service-template#readme",
   "dependencies": {
+    "@types/i18n": "^0.13.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "i18n": "^0.13.3",
     "joi": "^17.4.1",
     "pg": "^8.6.0",
     "ts-node": "^10.1.0",
