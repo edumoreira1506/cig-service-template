@@ -1,3 +1,7 @@
 {
-  "online-api": "API Online"
+	"online-api": "API Online",
+	"invalid-email": "{{field}} precisa ser um e-mail",
+	"empty-field": "{{field}} não pode ser vazio",
+	"required-field": "{{field}} é obrigatório",
+  "validated": "Válido!"
 }
