@@ -1,9 +1,8 @@
 import express from 'express'
+import { withBodyValidation } from '@cig-platform/core'
 
 import HomeController from '@Controllers/HomeController'
 import UserController from '@Controllers/UserController'
-
-import withBodyValidation from '@Middlewares/withBodyValidation'
 
 import { storeUserSchema } from '@Schemas/UserSchemas'
 
