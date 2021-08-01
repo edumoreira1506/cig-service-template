@@ -10,13 +10,13 @@ jest.mock('typeorm', () => ({
 describe('User actions', () => {
   describe('Register', () => {
     it('is a valid user', async () => {
-      const response = await request(App).post('/users').send({ email: faker.internet.email(), password: faker.internet.password() })
+      const response = await request(App).post('/v1/users').send({ email: faker.internet.email(), password: faker.internet.password() })
 
       expect(response.statusCode).toBe(200)
     })
 
     it('is a invalid user', async () => {
-      const response = await request(App).post('/users')
+      const response = await request(App).post('/v1/users')
 
       expect(response.statusCode).toBe(400)
       expect(response.body).toMatchObject({
@@ -29,7 +29,7 @@ describe('User actions', () => {
     })
 
     it('is a invalid user', async () => {
-      const response = await request(App).post('/users').send({ password: faker.internet.password() })
+      const response = await request(App).post('/v1/users').send({ password: faker.internet.password() })
 
       expect(response.statusCode).toBe(400)
       expect(response.body).toMatchObject({
@@ -42,7 +42,7 @@ describe('User actions', () => {
     })
 
     it('is a invalid user', async () => {
-      const response = await request(App).post('/users').send({ email: faker.internet.email() })
+      const response = await request(App).post('/v1/users').send({ email: faker.internet.email() })
 
       expect(response.statusCode).toBe(400)
       expect(response.body).toMatchObject({
@@ -55,7 +55,7 @@ describe('User actions', () => {
     })
 
     it('is a invalid user', async () => {
-      const response = await request(App).post('/users').send({ email: faker.name.firstName(), password: faker.internet.password() })
+      const response = await request(App).post('/v1/users').send({ email: faker.name.firstName(), password: faker.internet.password() })
 
       expect(response.statusCode).toBe(400)
       expect(response.body).toMatchObject({

@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 
-import routes from '@Configs/routes'
+import routes from '@Routes/index'
 import swaggerConfig from '@Configs/swagger'
 
 import '@Configs/database'

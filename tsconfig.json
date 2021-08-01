@@ -24,6 +24,9 @@
       "@Configs/*": [
         "src/configs/*"
       ],
+      "@Routes/*": [
+        "src/routes/*"
+      ],
       "@Schemas/*": [
         "src/schemas/*"
       ],
