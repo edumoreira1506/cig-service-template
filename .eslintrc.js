@@ -23,7 +23,8 @@ module.exports = {
     'no-use-before-define': 0,
     '@typescript-eslint/no-use-before-define': 0,
     'import/prefer-default-export': 'off',
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
   parserOptions: {
     'ecmaVersion': 12,
