@@ -3,7 +3,7 @@
 ## Dependencies
 
 ```
-NodeJS >= 14.17.3
+NodeJS >= 16.14.0
 Postgres >= 13
 ```
 
