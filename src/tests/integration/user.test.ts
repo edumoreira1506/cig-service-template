@@ -1,10 +1,11 @@
 import request from 'supertest'
-import faker from 'faker'
+import faker from '@faker-js/faker'
 
 import App from '@Configs/server'
 
 jest.mock('typeorm', () => ({
-  createConnection: jest.fn().mockResolvedValue({})
+  createConnection: jest.fn().mockResolvedValue({}),
+  Repository: jest.fn()
 }))
 
 describe('User actions', () => {
