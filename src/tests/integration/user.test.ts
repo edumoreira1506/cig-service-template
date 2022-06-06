@@ -4,8 +4,10 @@ import { faker } from '@faker-js/faker'
 import App from '@Configs/server'
 
 jest.mock('typeorm', () => ({
-  createConnection: jest.fn().mockResolvedValue({}),
-  Repository: jest.fn()
+  Repository: jest.fn(),
+  DataSource: jest.fn().mockImplementation(() => ({
+    initialize: jest.fn().mockResolvedValue(null)
+  })),
 }))
 
 describe('User actions', () => {
